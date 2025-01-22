@@ -35,15 +35,6 @@ const App = () => {
           </Router>
         </WishlistProvider>
       </CartProvider>
-
-      {/* <div className="pt-[110px]">
-        <BannerSlider />
-      </div>
-      <div className="container mx-auto md:hidden px-4">
-        <div className="flex justify-center">
-          <SearchBar />
-        </div>
-      </div> */}
     </>
   );
 };
