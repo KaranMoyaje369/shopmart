@@ -16,6 +16,7 @@ export const WishlistProvider = ({ children }) => {
 
   const removeFromWishlist = (id) => {
     setWishlist(wishlist.filter((item) => item.id !== id));
+    toast.error("Product Removed from wishlist");
   };
 
   return (
