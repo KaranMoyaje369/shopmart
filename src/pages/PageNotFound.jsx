@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/footer/Footer";
 
 const PageNotFound = () => {
   const navigate = useNavigate();
@@ -18,6 +19,8 @@ const PageNotFound = () => {
           Go To Home
         </Button>
       </div>
+
+      <Footer />
     </>
   );
 };
