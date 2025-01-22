@@ -6,6 +6,7 @@ import Slider1 from "../../assets/images/slider-1.jpg";
 import Slider2 from "../../assets/images/slider-2.jpg";
 import Slider3 from "../../assets/images/slider-3.jpg";
 import "../home/BannerSlider.css";
+import { NavLink } from "react-router-dom";
 
 // Example Banner Data
 const banners = [
@@ -97,12 +98,12 @@ const BannerSlider = () => {
                   {banner.content.price}
                 </span>
               </p>
-              <a
-                href={banner.content.button.link}
+              <NavLink
+                to={banner.content.button.link}
                 className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded"
               >
                 {banner.content.button.text}
-              </a>
+              </NavLink>
             </div>
           </div>
         ))}
